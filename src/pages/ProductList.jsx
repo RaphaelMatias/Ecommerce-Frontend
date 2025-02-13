@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { getProducts } from '../services/api';
 import Header from '../components/Header';
@@ -46,9 +47,9 @@ const ProductList = () => {
                                         <p className='card-text fw-bold fs-4 text-primary'>
                                             R$ {product.final_price.toFixed(2)}
                                         </p>
-                                        <a href={`/products/${product.id}`} className='btn btn-primary'>
+                                        <Link to={`/products/${product.id}`} className='btn btn-primary'>
                                             Ver Detalhes
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

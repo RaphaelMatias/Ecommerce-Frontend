@@ -1,0 +1,15 @@
+.product-detail-img {
+    transition: transform 0.3s ease;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.product-detail-img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .product-detail-img {
+        margin-bottom: 2rem;
+    }
+}
