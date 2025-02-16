@@ -80,12 +80,12 @@ const ProductDetail = () => {
                         <div className='d-flex gap-3 mb-4'>
                             {product.category && (
                                 <span className='badge bg-primary fs-5'>
-                                    {product.category.name}
+                                    {product.category}
                                 </span>
                             )}
                             {product.brand && (
                                 <span className='badge bg-success fs-5'>
-                                    {product.brand.name}
+                                    {product.brand}
                                 </span>
                             )}
                         </div>
