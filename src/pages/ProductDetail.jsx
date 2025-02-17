@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { getProductById, getRelatedProducts } from "../services/api";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ProductCard from "../components/ProductCard";
+import RelatedProductsCard from "../components/RelatedProductsCard";
 import "./ProductDetail.css";
 
 const ProductDetailSkeleton = () => (
@@ -172,7 +172,7 @@ const ProductDetail = () => {
                             <h3 className="mb-4">Você também pode gostar</h3>
                             <div className="row row-cols-1 row-cols-md-4 g-4">
                                 {relatedProducts.map((relatedProduct) => (
-                                    <ProductCard key={relatedProduct.id} product={relatedProduct} />
+                                    <RelatedProductsCard key={relatedProduct.id} product={relatedProduct} />
                                 ))}
                             </div>
                         </section>

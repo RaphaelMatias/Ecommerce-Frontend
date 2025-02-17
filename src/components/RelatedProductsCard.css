@@ -9,7 +9,7 @@
     transform: scale(1.03);
 }
 
-/* ProductCard.css */
+/* RelatedProductsCard.css */
 .product-card-image {
     height: 200px;
     object-fit: cover;
