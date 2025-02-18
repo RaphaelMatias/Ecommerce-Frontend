@@ -19,7 +19,7 @@ const RelatedProductsCard = ({ product, className }) => {
                 </p>
                 <div className="mt-3">
                     <div className="h5 text-primary">
-                        R$ {product.final_price.toFixed(2)}
+                        R$ {product.final_price}
                     </div>
                     <Link 
                         to={`/products/${product.id}`}

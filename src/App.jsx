@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 

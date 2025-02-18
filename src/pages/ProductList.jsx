@@ -64,7 +64,7 @@ const ProductList = () => {
                                         </p>
                                         <div className='mt-3'>
                                             <p className='card-text fw-bold fs-4 text-primary'>
-                                                R$ {product.final_price.toFixed(2)}
+                                                R$ {product.final_price}
                                             </p>
                                             <Link to={`/products/${product.id}`} className='btn btn-primary'>
                                                 Ver Detalhes
