@@ -73,7 +73,7 @@ const ProductDetail = () => {
         return (
             <div className="bg-light p-4 rounded-3 mb-4">
                 <h2 className="text-danger mb-0">
-                    R$ {product.final_price}
+                    R$ {product.final_price.toFixed(2)}
                 </h2>
                 {product.discount_price > 0 && (
                     <div className="mt-2">
